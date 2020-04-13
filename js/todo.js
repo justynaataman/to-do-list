@@ -62,12 +62,15 @@ input.addEventListener("keyup", function(event) {
     }
 });
 
-document.getElementById("b1").onclick = function ()
-{if (one.innerHTML !== "-"){
+function reply(id){
 
-one.style.textDecoration = "line-through";
-one.style.color = "gray";
-document.getElementById("b1").style.visibility = "hidden";
-}
+    {     var  id1  = id -1;
+        if (tasks[id1].innerHTML !== "-") {
+
+            tasks[id1].style.textDecoration = "line-through";
+            tasks[id1].style.color = "gray";
+            document.getElementById(id).style.visibility = "hidden";
+        }
+    }
 };
 
