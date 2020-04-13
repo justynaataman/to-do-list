@@ -22,10 +22,11 @@
 .co{
     position: relative;
     font-size: 25px;
-
+    line-height: inherit;
     margin-right: -1000px;
     top:-50px;
 }
+
 #date{
     position: relative;
     bottom: -38px;

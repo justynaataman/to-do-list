@@ -29,13 +29,45 @@ tasks.push(seven);
 tasks.push(eight);
 tasks.push(nine);
 
-one.innerHTML = 'start planning';
+/*
+six.style.textDecoration = "line-through";
+six.style.color = "gray";
+document.getElementById("b1").style.visibility = "hidden";
+document.getElementById("two").style.color = "whitesmoke";
+
+
+ */
+//all white
+for (i=0; i<tasks.length; i++) {
+
+    tasks[i].style.color = "whitesmoke";
+}
+
 
 input.addEventListener("keyup", function(event) {
     // Number 13 is the "Enter" key on the keyboard
     if (event.keyCode === 13) {
         const value = document.getElementById("input").value;
-        one.innerHTML = value.toString();
-        alert(tasks.length);
+        var i;
+        for (i=0; i<tasks.length; i++) {
+            if (value) {
+                if (tasks[i].innerHTML === "-") {
+                    tasks[i].innerHTML = value.toString();
+                    tasks[i].style.color = "#355268";
+
+                    break;
+                }
+            }
+        }
     }
 });
+
+document.getElementById("b1").onclick = function ()
+{if (one.innerHTML !== "-"){
+
+one.style.textDecoration = "line-through";
+one.style.color = "gray";
+document.getElementById("b1").style.visibility = "hidden";
+}
+};
+
