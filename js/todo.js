@@ -48,7 +48,7 @@ for (i=0; i<tasks.length; i++)
 
 
 input.addEventListener("keyup", function(event) {
-    // Number 13 is the "Enter" key on the keyboard
+
     if (event.keyCode === 13) {
         const value = document.getElementById("input").value;
         var i;
@@ -65,8 +65,10 @@ input.addEventListener("keyup", function(event) {
             }
         }
     }
-});
+}
+);
 
+//when clicked to check
 function reply(id){
 
     {     var  id1  = id -1;
