@@ -1,8 +1,10 @@
 //for a date
+
 const dateElement = document.getElementById("date");
 const options = {weekday : "long", month:"long", day:"numeric"};
 const today = new Date();
 dateElement.innerHTML = today.toLocaleDateString("en-US", options);
+
 ///
 
 
@@ -38,7 +40,8 @@ document.getElementById("two").style.color = "whitesmoke";
 
  */
 //all white
-for (i=0; i<tasks.length; i++) {
+for (i=0; i<tasks.length; i++)
+{
 
     tasks[i].style.color = "whitesmoke";
 }
@@ -51,7 +54,9 @@ input.addEventListener("keyup", function(event) {
         var i;
         for (i=0; i<tasks.length; i++) {
             if (value) {
-                if (tasks[i].innerHTML === "-") {
+                if (tasks[i].innerHTML === "-")
+                {
+
                     tasks[i].innerHTML = value.toString();
                     tasks[i].style.color = "#355268";
 
