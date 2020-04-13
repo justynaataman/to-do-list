@@ -59,7 +59,7 @@ input.addEventListener("keyup", function(event) {
 
                     tasks[i].innerHTML = value.toString();
                     tasks[i].style.color = "#355268";
-
+                    input.value = " ";
                     break;
                 }
             }
