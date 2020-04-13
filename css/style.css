@@ -1,19 +1,31 @@
 .fa {
     color: #0e3147;
     vertical-align: middle;
+    display:inline;
 
 }
 .header {
     width: 600px;
     height: 120px;
     /*background: linear-gradient( #dee5e3, #9198e5); */
-   /* background-image: url("../blue.jpg"); */
+    background-image: url("../blue.jpg");
     background-size: contain;
     border-radius: 15px 15px 0 0;
 
 
 }
+.inner{
+    padding: 0;
+    border: none;
+    background: none;
+}
+.co{
+    position: relative;
+    font-size: 25px;
 
+    margin-right: -1000px;
+    top:-50px;
+}
 #date{
     position: relative;
     bottom: -38px;
